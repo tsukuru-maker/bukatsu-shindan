@@ -1,0 +1,26 @@
+# ==================================================
+# 公開するのは「動く 6 ファイル」だけ
+#
+#   index.html  style.css  script.js  questions.js  results.js  ogp.png
+#
+# 制作・検証に使ったものはすべて除外する。
+# GitHub Pages は上記 6 つしか読まないので、除外しても公開ページは動く。
+# ==================================================
+
+# --- 制作・検証用（公開しない） ---
+tools/
+docs/
+README.md
+
+# --- ローカル検証の生成物 ---
+_shots/
+__pycache__/
+tools/__pycache__/
+
+# --- OS ---
+.DS_Store
+
+# --- Node（tools/ui_check.js 用。公開ページには不要） ---
+node_modules/
+package.json
+package-lock.json
